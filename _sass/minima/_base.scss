@@ -279,3 +279,14 @@ table {
             -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 }
+
+/**
+ * Fix for horizontal jumping when scrollbar appears.
+ */
+@media screen and (min-width: $on-large) {
+    html {
+        margin-left: calc(100vw - 100%);
+        margin-right: 0;
+    }
+}
+
